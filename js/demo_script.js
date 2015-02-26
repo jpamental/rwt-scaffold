@@ -1,4 +1,6 @@
 // Typographic scale toggle function
+
+
 $(document).ready(function(e) {
 	// Type scale toggle button
 	$(".toggle-scale").click(function(){
@@ -14,27 +16,27 @@ $(document).ready(function(e) {
 			$(this).removeClass("on");
 			$(this).addClass("off");
 			// reset correction
-			$("html").addClass("corrected");
+			//$("html").addClass("corrected");
 		} else {
 			$("html").removeClass("wf-inactive");
 			$("html").addClass("wf-active");
 			$(this).removeClass("off");
 			$(this).addClass("on");
-			$(".toggle-font-correction").removeClass("off");
-			$(".toggle-font-correction").addClass("on");
+			//$(".toggle-font-correction").removeClass("off");
+			//$(".toggle-font-correction").addClass("on");
 		}
 	});
 	// Type font correction toggle button
 	$(".toggle-font-correction").click(function(e){
 		e.preventDefault();
-		if($("html").hasClass("corrected")) {
-			$("html").removeClass("corrected");
-			$(this).removeClass("on");
-			$(this).addClass("off");
-		} else {
-			$("html").addClass("corrected");
+		if($("html").hasClass("uncorrected")) {
+			$("html").removeClass("uncorrected");
 			$(this).removeClass("off");
 			$(this).addClass("on");
+		} else {
+			$("html").addClass("uncorrected");
+			$(this).removeClass("on");
+			$(this).addClass("off");
 		}
 	});
 	// OTF Features toggle button
@@ -44,3 +46,4 @@ $(document).ready(function(e) {
 		$(this).toggleClass("on off");
 	});
 });
+

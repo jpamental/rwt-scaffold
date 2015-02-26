@@ -58,12 +58,13 @@
 					  font-weight: bold;
 					  color: #383838;
 					  background-color: #fefafa;
-					  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ede9e9));
-					  background-image: -webkit-linear-gradient(#ffffff, #ede9e9);
-					  background-image: -moz-linear-gradient(#ffffff, #ede9e9);
-					  background-image: -o-linear-gradient(#ffffff, #ede9e9);
-					  background-image: linear-gradient(#ffffff, #ede9e9);
-					  padding: 0.25em;
+					  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #ede9e9)) !important;
+					  background-image: -webkit-linear-gradient(#ffffff, #ede9e9) !important;
+					  background-image: -moz-linear-gradient(#ffffff, #ede9e9) !important;
+					  background-image: -o-linear-gradient(#ffffff, #ede9e9) !important;
+					  background-image: linear-gradient(#ffffff, #ede9e9) !important;
+					  display: inline-block;
+					  padding: 0.25em !important;
 					  -webkit-border-radius: 0.5em;
 					  -moz-border-radius: 0.5em;
 					  -ms-border-radius: 0.5em;
@@ -72,14 +73,15 @@
 					  -webkit-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 					  -moz-box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 					  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+					  text-shadow: none !important;
 					}
 					.button:hover {
 					  background-color: #e4e1e1;
-					  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fefafa), color-stop(100%, #cbc7c7));
-					  background-image: -webkit-linear-gradient(#fefafa, #cbc7c7);
-					  background-image: -moz-linear-gradient(#fefafa, #cbc7c7);
-					  background-image: -o-linear-gradient(#fefafa, #cbc7c7);
-					  background-image: linear-gradient(#fefafa, #cbc7c7);
+					  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #fefafa), color-stop(100%, #cbc7c7)) !important;
+					  background-image: -webkit-linear-gradient(#fefafa, #cbc7c7) !important;
+					  background-image: -moz-linear-gradient(#fefafa, #cbc7c7) !important;
+					  background-image: -o-linear-gradient(#fefafa, #cbc7c7) !important;
+					  background-image: linear-gradient(#fefafa, #cbc7c7) !important;
 					}
 					.toggle-fonts {
 					  position: fixed; 
@@ -113,9 +115,9 @@
 					}
 				</style>
 				
-				<script src="js/demo_script.js"></script>
 				
         		<!-- END web font toggle -->
+        <div id="top"></div>
         <div class="page">
         	<header role="banner" class="clearfix">
         		<h2>Responsive Web Typography Scaffold</h2>
@@ -347,12 +349,13 @@
         	</div><!-- /main -->
         	<footer class="clearfix">
         		<ul class="menu">
-        			<li class="last"><a href="#page">Top</a></li>
+        			<li class="last"><a href="#top">Top</a></li>
         		</ul>
         	</footer>
         </div><!-- /page -->
 
       <script src="js/jquery-1.11.0.min.js"></script>
       <script src="js/script.js"></script>
+				<script src="js/demo_script.js"></script>
     </body>
 </html>

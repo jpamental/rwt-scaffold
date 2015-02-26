@@ -10,10 +10,10 @@ function checkMq() {
 	$('body').removeClass('mq-phone');
 	if(Modernizr.mq('only all and (min-width: 80.0625em)')) {
 		$('body').addClass('mq-l-desk');
-		resetMenu();
+		//resetMenu();
 	} else if(Modernizr.mq('only all and (min-width: 58em)')) {
 		$('body').addClass('mq-desk');
-		resetMenu();
+		//resetMenu();
 	} else if(Modernizr.mq('only all and (min-width: 44em)')) {
 		$('body').addClass('mq-l-tab');
 	} else if(Modernizr.mq('only all and (min-width: 25em)')) {
