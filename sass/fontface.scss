@@ -1,0 +1,69 @@
+$fonts-path: "../fonts/FiraSans";
+
+/* @font-face entries for the Fira Sans webfonts */
+/* 'grouped' by family name and assigned to bold/italic styles */
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url('#{$fonts-path}/FiraSans-Light.eot');
+  src: url('#{$fonts-path}/FiraSans-Light.eot?#iefix') format('eot'), url("#{$fonts-path}/FiraSans-Light.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url('#{$fonts-path}/FiraSans-LightItalic.eot');
+  src: url('#{$fonts-path}/FiraSans-LightItalic.eot?#iefix') format('eot'), url("#{$fonts-path}/FiraSans-LightItalic.woff") format("woff");
+  font-weight: 200; 
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url('#{$fonts-path}/FiraSans-Regular.eot');
+  src: url('#{$fonts-path}/FiraSans-Regular.eot?#iefix') format('eot'), url("#{$fonts-path}/FiraSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url('#{$fonts-path}/FiraSans-RegularItalic.eot');
+  src: url('#{$fonts-path}/FiraSans-RegularItalic.eot?#iefix') format('eot'), url("#{$fonts-path}/FiraSans-RegularItalic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url('#{$fonts-path}/FiraSans-Medium.eot');
+  src: url('#{$fonts-path}/FiraSans-Medium.eot?#iefix') format('eot'), url("#{$fonts-path}/FiraSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url('#{$fonts-path}/FiraSans-MediumItalic.eot');
+  src: url('#{$fonts-path}/FiraSans-MediumItalic.eot?#iefix') format('eot'), url("#{$fonts-path}/FiraSans-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url('#{$fonts-path}/FiraSans-Bold.eot');
+  src: url('#{$fonts-path}/FiraSans-Bold.eot?#iefix') format('eot'), url("#{$fonts-path}/FiraSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url('#{$fonts-path}/FiraSans-BoldItalic.eot');
+  src: url('#{$fonts-path}/FiraSans-BoldItalic.eot?#iefix') format('eot'), url("#{$fonts-path}/FiraSans-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+}
+

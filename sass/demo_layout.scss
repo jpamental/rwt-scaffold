@@ -1,0 +1,87 @@
+@import 'base';
+
+/* Page furniture */
+.page {
+	width: 90%; /* this is somewhat arbitrary - just a value that is close to full width but leaves a bit of margin */
+	margin: 0 auto; /* make sure the page area stays centered */
+	> header {
+			padding: 0 0.75em;
+	} 
+	> .main {
+			padding: 0 0.75em;
+	} 
+	> footer {
+			padding: 0 0.75em;
+	} 
+}
+
+
+@media (min-width: $mq-s-tab) {
+	.page {
+		width: 96%; 
+		max-width: 38em;
+		margin: 0 auto; /* make sure the page area stays centered */
+		> header {
+			padding: 0 0.75em;
+		} 
+		> .main {
+			padding: 0 0.75em;
+		} 
+		> footer {
+			padding: 0 0.75em;
+		} 
+	}
+}
+
+@media (min-width: $mq-l-tab) {
+	.page {
+		width: 94%; 
+		max-width: 40em;
+		margin: 0 auto; /* make sure the page area stays centered */
+		> header {
+			padding: 0 0.75em;
+		}
+		> .main {
+			padding: 0 0.75em;
+		} 
+		> footer {
+			padding: 0 0.75em;
+		} 
+	}
+}
+
+@media (min-width: $mq-desk) {
+	.page {
+		width: 90%; 
+		max-width: 45em;
+		margin: 0 auto; /* make sure the page area stays centered */
+		> header {
+			padding: 0 1.5em;
+		} 
+		> .main {
+			padding: 0 1.5em;
+		} 
+		> footer {
+			padding: 0 1.5em;
+		} 
+	}
+}
+
+@media (min-width: $mq-l-desk) {
+	.page {
+		width: 80%; 
+		max-width: 60em;
+		> header {
+			padding: 0 1.5em;
+		} 
+		> .main {
+			padding: 0 1.5em;
+		} 
+		> footer {
+			padding: 0 1.5em;
+		} 
+	}
+}
+
+
+

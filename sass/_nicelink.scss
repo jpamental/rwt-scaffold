@@ -1,0 +1,22 @@
+/* This mixin is meant to give a nicer link underline that sits comfortably below the text and uses text shadow to knock out the underline around descenders */
+
+@mixin nicelink($link: #0000ee, $background: #ffffff, $padding: 0.1em, $position: 1.15em ) {
+		color: $link;
+		padding: $padding 0;
+		text-decoration: none;
+		text-shadow: 1px 0 0 $background, 1px 0 0 $background, -2px 0 0 $background, -2px 0 0 $background;
+		@include background-image(linear-gradient(transparent, rgba($link, 0) 50%, rgba(lighten($link, 5%), 0.85) 50%, transparent));
+		background-repeat: repeat-x;
+		background-size: 2px 2px;
+		background-position: 0 $position;
+}
+
+/*
+Nice Link Features key
+Background Color - defaults to white, needed to blend the text shadow with the background color to create the 'knock-out' effect
+$background: #ffffff
+
+Link Color - defaults to blue, needed to match the text and underline colors
+$link: #0000ee
+
+*/
