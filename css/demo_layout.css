@@ -67,81 +67,61 @@ $link: #0000ee
 
 */
 /* Page furniture */
-/* line 4, ../sass/demo_layout.scss */
 .page {
-  width: 90%;
+  width: 100%;
   /* this is somewhat arbitrary - just a value that is close to full width but leaves a bit of margin */
   margin: 0 auto;
   /* make sure the page area stays centered */ }
-  /* line 7, ../sass/demo_layout.scss */
   .page > header {
     padding: 0 0.75em; }
-  /* line 10, ../sass/demo_layout.scss */
   .page > .main {
     padding: 0 0.75em; }
-  /* line 13, ../sass/demo_layout.scss */
   .page > footer {
     padding: 0 0.75em; }
 
 @media (min-width: 25em) {
-  /* line 20, ../sass/demo_layout.scss */
   .page {
     width: 96%;
     max-width: 38em;
     margin: 0 auto;
     /* make sure the page area stays centered */ }
-    /* line 24, ../sass/demo_layout.scss */
     .page > header {
       padding: 0 0.75em; }
-    /* line 27, ../sass/demo_layout.scss */
     .page > .main {
       padding: 0 0.75em; }
-    /* line 30, ../sass/demo_layout.scss */
     .page > footer {
       padding: 0 0.75em; } }
 @media (min-width: 43.75em) {
-  /* line 37, ../sass/demo_layout.scss */
   .page {
     width: 94%;
     max-width: 40em;
     margin: 0 auto;
     /* make sure the page area stays centered */ }
-    /* line 41, ../sass/demo_layout.scss */
     .page > header {
       padding: 0 0.75em; }
-    /* line 44, ../sass/demo_layout.scss */
     .page > .main {
       padding: 0 0.75em; }
-    /* line 47, ../sass/demo_layout.scss */
     .page > footer {
       padding: 0 0.75em; } }
 @media (min-width: 56.25em) {
-  /* line 54, ../sass/demo_layout.scss */
   .page {
     width: 90%;
     max-width: 45em;
     margin: 0 auto;
     /* make sure the page area stays centered */ }
-    /* line 58, ../sass/demo_layout.scss */
     .page > header {
       padding: 0 1.5em; }
-    /* line 61, ../sass/demo_layout.scss */
     .page > .main {
       padding: 0 1.5em; }
-    /* line 64, ../sass/demo_layout.scss */
     .page > footer {
       padding: 0 1.5em; } }
 @media (min-width: 81.25em) {
-  /* line 71, ../sass/demo_layout.scss */
   .page {
     width: 80%;
     max-width: 60em; }
-    /* line 74, ../sass/demo_layout.scss */
     .page > header {
       padding: 0 1.5em; }
-    /* line 77, ../sass/demo_layout.scss */
     .page > .main {
       padding: 0 1.5em; }
-    /* line 80, ../sass/demo_layout.scss */
     .page > footer {
       padding: 0 1.5em; } }

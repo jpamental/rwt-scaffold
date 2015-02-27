@@ -184,26 +184,45 @@ h1 {
 	font-size: (32 / $body-copy-size) * 1em; 
 	letter-spacing: normal;
 	line-height: (40 / 32);
-	margin: 1em 0 1em 0;
+	margin-top: (30 / 32) * 1em;
+	margin-bottom: (10 / 32) * 1em;
+	margin-left: 0;
+	margin-right: 0;
 	@media (min-width: $mq-s-tab) {
 		font-size: (36 / $body-copy-size) * 1em; 
 		letter-spacing: normal;
 		line-height: (40 / 36);
+		margin-top: (30 / 36) * 1em;
+		margin-bottom: (10 / 36) * 1em;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	@media (min-width: $mq-l-tab) {
 		font-size: (40 / $body-copy-size) * 1em; 
 		letter-spacing: normal;
 		line-height: (45 / 40);
+		margin-top: (30 / 40) * 1em;
+		margin-bottom: (20 / 40) * 1em;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	@media (min-width: $mq-desk) {
 		font-size: (48 / $body-copy-size) * 1em; 
 		letter-spacing: normal;
 		line-height: (50 / 48);
+		margin-top: (50 / 48) * 1em;
+		margin-bottom: (20 / 48) * 1em;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	@media (min-width: $mq-l-desk) {
 		font-size: (64 / ($body-copy-size + 2)) * 1em; 
 		letter-spacing: normal;
 		line-height: (68 / 64);
+		margin-top: (60 / 64) * 1em;
+		margin-bottom: (30 / 64) * 1em;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	.wf-inactive & {
 		@media (min-width: $mq-s-tab) {
@@ -228,26 +247,45 @@ h2 {
 	font-size: (26 / $body-copy-size) * 1em; 
 	letter-spacing: normal;
 	line-height: (30 / 26);
-	margin: 1em 0 1em 0;
+	margin-top: (20 / 26) * 1em;
+	margin-bottom: (10 / 26) * 1em;
+	margin-left: 0;
+	margin-right: 0;
 	@media (min-width: $mq-s-tab) {
 		font-size: (28 / $body-copy-size) * 1em; 
 		letter-spacing: normal;
 		line-height: (32 / 28);
+		margin-top: (20 / 28) * 1em;
+		margin-bottom: (10 / 28) * 1em;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	@media (min-width: $mq-l-tab) {
 		font-size: (32 / $body-copy-size) * 1em; 
 		letter-spacing: normal;
 		line-height: (40 / 32);
+		margin-top: (20 / 32) * 1em;
+		margin-bottom: (10 / 32) * 1em;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	@media (min-width: $mq-desk) {
 		font-size: (36 / $body-copy-size) * 1em; 
 		letter-spacing: normal;
 		line-height: (45 / 36);
+		margin-top: (30 / 36) * 1em;
+		margin-bottom: (20 / 36) * 1em;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	@media (min-width: $mq-l-desk) {
-		font-size: (40 / $body-copy-size) * 1em; 
+		font-size: (40 / ($body-copy-size + 2)) * 1em; 
 		letter-spacing: normal;
 		line-height: (48 / 40);
+		margin-top: (30 / 40) * 1em;
+		margin-bottom: (20 / 40) * 1em;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	.wf-inactive & {
 		@media (min-width: $mq-s-tab) {
@@ -269,21 +307,48 @@ h3 {
 	color: $header-color;
 	font-family: $sans-serif; 
 	font-weight: 500;
-	font-size: 1.5em;
+	font-size: (21 / $body-copy-size) * 1em; 
 	letter-spacing: normal;
-	line-height: 1.2em;
-	margin: 1em 0 1em 0;
+	line-height: 1.15em;
+	margin-top: (20 / 24) * 1em;
+	margin-bottom: (10 / 24) * 1em;
+	margin-left: 0;
+	margin-right: 0;
 	@media (min-width: $mq-s-tab) {
-		
+		font-size: (24 / $body-copy-size) * 1em; 
+		letter-spacing: normal;
+		line-height: (28 / 24);
+		margin-top: (20 / 24) * 1em;
+		margin-bottom: (10 / 24) * 1em;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	@media (min-width: $mq-l-tab) {
-		
+		font-size: (28 / $body-copy-size) * 1em; 
+		letter-spacing: normal;
+		line-height: (32 / 28);
+		margin-top: (20 / 28) * 1em;
+		margin-bottom: (10 / 28) * 1em;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	@media (min-width: $mq-desk) {
-		
+		font-size: (30 / $body-copy-size) * 1em; 
+		letter-spacing: normal;
+		line-height: (36 / 30);
+		margin-top: (20 / 30) * 1em;
+		margin-bottom: (10 / 30) * 1em;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	@media (min-width: $mq-l-desk) {
-		
+		font-size: (32 / ($body-copy-size + 2)) * 1em; 
+		letter-spacing: normal;
+		line-height: (46 / 32);
+		margin-top: (20 / 32) * 1em;
+		margin-bottom: (10 / 32) * 1em;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	.wf-inactive & {
 		@media (min-width: $mq-s-tab) {
@@ -304,17 +369,48 @@ h3 {
 h4 {
 	color: $header-color;
 	font-family: $sans-serif; 
+	font-size: (18 / $body-copy-size) * 1em; 
+	letter-spacing: normal;
+	line-height: (24 / 18);
+	margin-top: (15 / 18) * 1em;
+	margin-bottom: (5 / 18) * 1em;
+	margin-left: 0;
+	margin-right: 0;
 	@media (min-width: $mq-s-tab) {
-		
+		font-size: (18 / $body-copy-size) * 1em; 
+		letter-spacing: normal;
+		line-height: (24 / 18);
+		margin-top: (15 / 18) * 1em;
+		margin-bottom: (5 / 18) * 1em;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	@media (min-width: $mq-l-tab) {
-		
+		font-size: (20 / $body-copy-size) * 1em; 
+		letter-spacing: normal;
+		line-height: (24 / 20);
+		margin-top: (15 / 20) * 1em;
+		margin-bottom: (5 / 20) * 1em;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	@media (min-width: $mq-desk) {
-		
+		font-size: (22 / $body-copy-size) * 1em; 
+		letter-spacing: normal;
+		line-height: (26 / 22);
+		margin-top: (15 / 22) * 1em;
+		margin-bottom: (5 / 22) * 1em;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	@media (min-width: $mq-l-desk) {
-		
+		font-size: (24 / ($body-copy-size + 2)) * 1em; 
+		letter-spacing: normal;
+		line-height: (30 / 24);
+		margin-top: (15 / 24) * 1em;
+		margin-bottom: (5 / 24) * 1em;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	.wf-inactive & {
 		@media (min-width: $mq-s-tab) {
@@ -395,6 +491,7 @@ h6 {
 }
 
 p {
+	margin: 0 0 1em 0;
 	max-width: 40em;
 }
 
@@ -418,6 +515,24 @@ a {
 	}
 }
 
+
+/* Initial Cap styles */
+
+%initial_cap {
+	font-size: 3em; 
+	font-family: $sans-serif;
+	line-height: 0.9em; 
+	float: left; 
+	padding-right: 0.1em; 
+}
+.article-text p:first-of-type:first-letter {
+	@extend %initial_cap;
+}
+
+/* To work in older versions of IE you have to target an adjacent selector because first-of-type doesn't work */
+.lt-ie9 .article-text h2 + p:first-letter {
+	@extend %initial_cap;
+}
 
 
 

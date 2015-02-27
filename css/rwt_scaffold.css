@@ -596,27 +596,46 @@ h1 {
   font-size: 2em;
   letter-spacing: normal;
   line-height: 1.25;
-  margin: 1em 0 1em 0; }
+  margin-top: 0.9375em;
+  margin-bottom: 0.3125em;
+  margin-left: 0;
+  margin-right: 0; }
   @media (min-width: 25em) {
     h1 {
       font-size: 2.25em;
       letter-spacing: normal;
-      line-height: 1.11111; } }
+      line-height: 1.11111;
+      margin-top: 0.83333em;
+      margin-bottom: 0.27778em;
+      margin-left: 0;
+      margin-right: 0; } }
   @media (min-width: 43.75em) {
     h1 {
       font-size: 2.5em;
       letter-spacing: normal;
-      line-height: 1.125; } }
+      line-height: 1.125;
+      margin-top: 0.75em;
+      margin-bottom: 0.5em;
+      margin-left: 0;
+      margin-right: 0; } }
   @media (min-width: 56.25em) {
     h1 {
       font-size: 3em;
       letter-spacing: normal;
-      line-height: 1.04167; } }
+      line-height: 1.04167;
+      margin-top: 1.04167em;
+      margin-bottom: 0.41667em;
+      margin-left: 0;
+      margin-right: 0; } }
   @media (min-width: 81.25em) {
     h1 {
       font-size: 3.55556em;
       letter-spacing: normal;
-      line-height: 1.0625; } }
+      line-height: 1.0625;
+      margin-top: 0.9375em;
+      margin-bottom: 0.46875em;
+      margin-left: 0;
+      margin-right: 0; } }
 
 h2 {
   color: #2f2f2f;
@@ -625,40 +644,141 @@ h2 {
   font-size: 1.625em;
   letter-spacing: normal;
   line-height: 1.15385;
-  margin: 1em 0 1em 0; }
+  margin-top: 0.76923em;
+  margin-bottom: 0.38462em;
+  margin-left: 0;
+  margin-right: 0; }
   @media (min-width: 25em) {
     h2 {
       font-size: 1.75em;
       letter-spacing: normal;
-      line-height: 1.14286; } }
+      line-height: 1.14286;
+      margin-top: 0.71429em;
+      margin-bottom: 0.35714em;
+      margin-left: 0;
+      margin-right: 0; } }
   @media (min-width: 43.75em) {
     h2 {
       font-size: 2em;
       letter-spacing: normal;
-      line-height: 1.25; } }
+      line-height: 1.25;
+      margin-top: 0.625em;
+      margin-bottom: 0.3125em;
+      margin-left: 0;
+      margin-right: 0; } }
   @media (min-width: 56.25em) {
     h2 {
       font-size: 2.25em;
       letter-spacing: normal;
-      line-height: 1.25; } }
+      line-height: 1.25;
+      margin-top: 0.83333em;
+      margin-bottom: 0.55556em;
+      margin-left: 0;
+      margin-right: 0; } }
   @media (min-width: 81.25em) {
     h2 {
-      font-size: 2.5em;
+      font-size: 2.22222em;
       letter-spacing: normal;
-      line-height: 1.2; } }
+      line-height: 1.2;
+      margin-top: 0.75em;
+      margin-bottom: 0.5em;
+      margin-left: 0;
+      margin-right: 0; } }
 
 h3 {
   color: #2f2f2f;
   font-family: "Fira Sans", Helvetica, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
   font-weight: 500;
-  font-size: 1.5em;
+  font-size: 1.3125em;
   letter-spacing: normal;
-  line-height: 1.2em;
-  margin: 1em 0 1em 0; }
+  line-height: 1.15em;
+  margin-top: 0.83333em;
+  margin-bottom: 0.41667em;
+  margin-left: 0;
+  margin-right: 0; }
+  @media (min-width: 25em) {
+    h3 {
+      font-size: 1.5em;
+      letter-spacing: normal;
+      line-height: 1.16667;
+      margin-top: 0.83333em;
+      margin-bottom: 0.41667em;
+      margin-left: 0;
+      margin-right: 0; } }
+  @media (min-width: 43.75em) {
+    h3 {
+      font-size: 1.75em;
+      letter-spacing: normal;
+      line-height: 1.14286;
+      margin-top: 0.71429em;
+      margin-bottom: 0.35714em;
+      margin-left: 0;
+      margin-right: 0; } }
+  @media (min-width: 56.25em) {
+    h3 {
+      font-size: 1.875em;
+      letter-spacing: normal;
+      line-height: 1.2;
+      margin-top: 0.66667em;
+      margin-bottom: 0.33333em;
+      margin-left: 0;
+      margin-right: 0; } }
+  @media (min-width: 81.25em) {
+    h3 {
+      font-size: 1.77778em;
+      letter-spacing: normal;
+      line-height: 1.4375;
+      margin-top: 0.625em;
+      margin-bottom: 0.3125em;
+      margin-left: 0;
+      margin-right: 0; } }
 
 h4 {
   color: #2f2f2f;
-  font-family: "Fira Sans", Helvetica, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif; }
+  font-family: "Fira Sans", Helvetica, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  font-size: 1.125em;
+  letter-spacing: normal;
+  line-height: 1.33333;
+  margin-top: 0.83333em;
+  margin-bottom: 0.27778em;
+  margin-left: 0;
+  margin-right: 0; }
+  @media (min-width: 25em) {
+    h4 {
+      font-size: 1.125em;
+      letter-spacing: normal;
+      line-height: 1.33333;
+      margin-top: 0.83333em;
+      margin-bottom: 0.27778em;
+      margin-left: 0;
+      margin-right: 0; } }
+  @media (min-width: 43.75em) {
+    h4 {
+      font-size: 1.25em;
+      letter-spacing: normal;
+      line-height: 1.2;
+      margin-top: 0.75em;
+      margin-bottom: 0.25em;
+      margin-left: 0;
+      margin-right: 0; } }
+  @media (min-width: 56.25em) {
+    h4 {
+      font-size: 1.375em;
+      letter-spacing: normal;
+      line-height: 1.18182;
+      margin-top: 0.68182em;
+      margin-bottom: 0.22727em;
+      margin-left: 0;
+      margin-right: 0; } }
+  @media (min-width: 81.25em) {
+    h4 {
+      font-size: 1.33333em;
+      letter-spacing: normal;
+      line-height: 1.25;
+      margin-top: 0.625em;
+      margin-bottom: 0.20833em;
+      margin-left: 0;
+      margin-right: 0; } }
 
 h5 {
   color: #2f2f2f;
@@ -669,6 +789,7 @@ h6 {
   font-family: "Fira Sans", Helvetica, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif; }
 
 p {
+  margin: 0 0 1em 0;
   max-width: 40em; }
 
 a {
@@ -748,6 +869,15 @@ a {
     background-size: 2px 2px;
     background-position: 0 1.15em; }
 
+/* Initial Cap styles */
+.article-text p:first-of-type:first-letter, .lt-ie9 .article-text h2 + p:first-letter {
+  font-size: 3em;
+  font-family: "Fira Sans", Helvetica, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+  line-height: 0.9em;
+  float: left;
+  padding-right: 0.1em; }
+
+/* To work in older versions of IE you have to target an adjacent selector because first-of-type doesn't work */
 /* Make sure this is last - helps correct for an orientation scale bug in iOS */
 @media screen and (orientation: landscape) and (device-width: 320px) and (device-height: 480px) {
   body {
