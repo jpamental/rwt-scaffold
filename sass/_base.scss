@@ -27,27 +27,6 @@
 // the documentation at http://compass-style.org/reference/compass/support/
 $box-sizing-polyfill-path: "htc/boxsizing.htc";
 
-//
-// Font faces, stacks and sizes.
-//
-$sans-serif-fallback: Helvetica, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
-$serif-fallback: Georgia, "Times New Roman", Times, serif;
-
-$sans-serif: "Fira Sans", $sans-serif-fallback;
-$serif: $serif-fallback;
-
-$text-base-size: 16; // use base equivalent pixel size (i.e. 16 for 'default')
-$body-copy-size: 16; // adjust this to the equivalent pixel size you'd like for body copy
-$body-copy-lh: 23;   // adjust to equivalent pixel value for line height in body copy
-
-// H1 size and line height across major scaling points
-$heading-h1-size-p: 32; // equivalent pixel value on phones/small tablets
-$heading-h1-size-t: 40; // equivalent pixel value on larger tablets
-$heading-h1-size-d: 48; // equivalent pixel value on desktop
-$heading-h1-lh-p: 1.25; // equivalent pixel value on phones/small tablets
-$heading-h1-lh-t: 1.125; // equivalent pixel value on phones/small tablets
-$heading-h1-lh-d: 1.05; // equivalent pixel value on phones/small tablets
-
 
 
 //
@@ -80,10 +59,6 @@ $mq-l-desk: 81.25em; /* 1300px */
 // Partials to be shared with all .scss files.
 //
 @import "compass/css3";
-@import "compass/typography";
 @import "compass/utilities";
 
-
-@import "otfeatures";		// import OpenType Features mixin
-@import "nicelink";			// import nicelink mixin
 

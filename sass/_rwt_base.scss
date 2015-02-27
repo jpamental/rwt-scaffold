@@ -1,0 +1,67 @@
+/* Set theme variables here */
+
+//
+// "base" partial
+//
+// To make it easier to use all variables and mixins in any Sass file in this
+// theme, each .scss file has an import "base" declaration. And this _base.scss
+// file is in charge of importing all the other partials needed for the theme.
+//
+// This base partial is organized in this way:
+// - First we set any shared Sass variables.
+// - Next we import Compass plug-ins (Sass mixin libraries).
+// - Last we import a _custom.scss partial that includes our custom mixins.
+//
+
+
+
+//
+// Font faces, stacks and sizes.
+//
+$sans-serif-fallback: Helvetica, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+$serif-fallback: Georgia, "Times New Roman", Times, serif;
+
+$sans-serif: "Fira Sans", $sans-serif-fallback;
+$serif: $serif-fallback;
+
+$text-base-size: 16; // use base equivalent pixel size (i.e. 16 for 'default')
+$body-copy-size: 16; // adjust this to the equivalent pixel size you'd like for body copy
+$body-copy-size-l: 18; // adjust this to the equivalent pixel size you'd like for body copy on larger screens
+$body-copy-lh: 23;   // adjust to equivalent pixel value for line height in body copy
+
+// H1 size and line height across major scaling points
+$h1-size-p: 32; // equivalent pixel value on phones
+$h1-size-s-tab: 36; // equivalent pixel value on smaller tablets
+$h1-size-l-tab: 40; // equivalent pixel value on larger tablets
+$h1-size-desk: 48; // equivalent pixel value on desktop
+$h1-size-l-desk: 64; // equivalent pixel value on large desktop
+
+$h1-lh-p: (40 / $h1-size-p); // equivalent pixel value on phones/small tablets
+$h1-lh-s-tab: (40 / $h1-size-s-tab); // equivalent pixel value on smaller tablets
+$h1-lh-l-tab: (45 / $h1-size-l-tab); // equivalent pixel value on larger tablets
+$h1-lh-desk: (50 / $h1-size-desk); // equivalent pixel value on desktop
+$h1-lh-l-desk: (68 / $h1-size-l-desk); // equivalent pixel value on large desktop
+
+
+
+
+//
+// Media Query Breakpoints 
+// These values are meant as a starting point but can be adjusted to suit your own layout and should be 
+// tweaked to match the rest of your design
+//
+$rwt-mq-s-tab: 25em; /* 400px */
+$rwt-mq-l-tab: 43.75em; /* 700px */
+$rwt-mq-desk: 56.25em; /* 900px */
+$rwt-mq-l-desk: 81.25em; /* 1300px */
+
+
+//
+// Partials to be shared with all .scss files.
+//
+@import "compass/typography";
+
+
+@import "rwt_otfeatures";		// import OpenType Features mixin
+@import "rwt_nicelink";			// import nicelink mixin
+
