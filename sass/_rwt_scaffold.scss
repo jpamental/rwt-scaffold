@@ -55,8 +55,11 @@ html {
 		margin-top
 		margin-bottom	
 */
+body {
+	font-size: 1em;
+}
 
-body, caption, th, td, input, textarea, legend, fieldset {
+p, caption, th, td, input, textarea, legend, fieldset {
 	color: $text-color;
 	font-family: $sans-serif; 
 	font-size: ($body-copy-size / $text-base-size) * 1em; 
@@ -64,20 +67,22 @@ body, caption, th, td, input, textarea, legend, fieldset {
 	line-height: ($body-copy-lh / $body-copy-size);
 	@include transition(font-size 0.2s ease-in-out);
 	@media (min-width: $rwt-mq-s-tab) {
-		
+		font-size: ($body-copy-size / $text-base-size) * 1em;
 	}
 	@media (min-width: $rwt-mq-l-tab) {
-		
+		font-size: ($body-copy-size / $text-base-size) * 1em;
 	}
 	@media (min-width: $rwt-mq-desk) {
-		
+		font-size: ($body-copy-size / $text-base-size) * 1em;
 	}
 	@media (min-width: $rwt-mq-l-desk) {
-		font-size: (($body-copy-size + 2) / $text-base-size) * 1em;
+		font-size: (($body-copy-size-l) / $text-base-size) * 1em;
+		line-height: ($body-copy-lh-l / $body-copy-size-l);
 	}
 	.wf-inactive & {
-		font-size: 1.155em;
 		font-family: $sans-serif-fallback;
+		font-size: 0.985em;
+		word-spacing: 0.07em;
 		@media (min-width: $rwt-mq-s-tab) {
 			
 		}
@@ -138,6 +143,7 @@ h1 {
 		margin-bottom: (30 / $h1-size-l-desk) * 1em;
 	}
 	.wf-inactive & {
+		font-family: $sans-serif-fallback;
 		@media (min-width: $rwt-mq-s-tab) {
 			
 		}
@@ -145,7 +151,10 @@ h1 {
 			
 		}
 		@media (min-width: $rwt-mq-desk) {
-			
+			font-size: 2.95em;
+			letter-spacing: -0.025em;
+			margin-top: (50 / $h1-size-desk) * 1em;
+			margin-bottom: (23 / $h1-size-desk) * 1em;
 		}
 		@media (min-width: $rwt-mq-l-desk) {
 			
@@ -157,50 +166,51 @@ h2 {
 	color: $header-color;
 	font-family: $sans-serif; 
 	font-weight: 500; 
-	font-size: (26 / $body-copy-size) * 1em; 
+	font-size: ($h2-size-p / $body-copy-size) * 1em; 
 	letter-spacing: normal;
-	line-height: (30 / 26);
-	margin-top: (20 / 26) * 1em;
-	margin-bottom: (10 / 26) * 1em;
+	line-height: $h2-lh-p;
+	margin-top: (20 / $h2-size-p) * 1em;
+	margin-bottom: (10 / $h2-size-p) * 1em;
 	margin-left: 0;
 	margin-right: 0;
 	@media (min-width: $rwt-mq-s-tab) {
-		font-size: (28 / $body-copy-size) * 1em; 
+		font-size: ($h2-size-s-tab / $body-copy-size) * 1em; 
 		letter-spacing: normal;
-		line-height: (32 / 28);
-		margin-top: (20 / 28) * 1em;
-		margin-bottom: (10 / 28) * 1em;
+		line-height: $h2-lh-s-tab;
+		margin-top: (20 / $h2-size-s-tab) * 1em;
+		margin-bottom: (10 / $h2-size-s-tab) * 1em;
 		margin-left: 0;
 		margin-right: 0;
 	}
 	@media (min-width: $rwt-mq-l-tab) {
-		font-size: (32 / $body-copy-size) * 1em; 
+		font-size: ($h2-size-l-tab / $body-copy-size) * 1em; 
 		letter-spacing: normal;
-		line-height: (40 / 32);
-		margin-top: (20 / 32) * 1em;
-		margin-bottom: (10 / 32) * 1em;
+		line-height: $h2-lh-l-tab;
+		margin-top: (20 / $h2-size-l-tab) * 1em;
+		margin-bottom: (10 / $h2-size-l-tab) * 1em;
 		margin-left: 0;
 		margin-right: 0;
 	}
 	@media (min-width: $rwt-mq-desk) {
-		font-size: (36 / $body-copy-size) * 1em; 
+		font-size: ($h2-size-desk / $body-copy-size) * 1em; 
 		letter-spacing: normal;
-		line-height: (45 / 36);
-		margin-top: (30 / 36) * 1em;
-		margin-bottom: (20 / 36) * 1em;
+		line-height: $h2-lh-desk;
+		margin-top: (30 / $h2-size-desk) * 1em;
+		margin-bottom: (20 / $h2-size-desk) * 1em;
 		margin-left: 0;
 		margin-right: 0;
 	}
 	@media (min-width: $rwt-mq-l-desk) {
-		font-size: (40 / ($body-copy-size + 2)) * 1em; 
+		font-size: ($h2-size-l-desk / $body-copy-size-l) * 1em; 
 		letter-spacing: normal;
-		line-height: (48 / 40);
-		margin-top: (30 / 40) * 1em;
-		margin-bottom: (20 / 40) * 1em;
+		line-height: $h2-lh-l-desk;
+		margin-top: (30 / $h2-size-l-desk) * 1em;
+		margin-bottom: (20 / $h2-size-l-desk) * 1em;
 		margin-left: 0;
 		margin-right: 0;
 	}
 	.wf-inactive & {
+		font-family: $sans-serif-fallback;
 		@media (min-width: $rwt-mq-s-tab) {
 			
 		}
@@ -208,10 +218,12 @@ h2 {
 			
 		}
 		@media (min-width: $rwt-mq-desk) {
-			
+			margin-top: (28 / $h2-size-desk) * 1em;
+			margin-bottom: (22 / $h2-size-desk) * 1em;
 		}
 		@media (min-width: $rwt-mq-l-desk) {
-			
+			margin-top: (28 / $h2-size-l-desk) * 1em;
+			margin-bottom: (22 / $h2-size-l-desk) * 1em;
 		}
 	}
 }
@@ -220,50 +232,51 @@ h3 {
 	color: $header-color;
 	font-family: $sans-serif; 
 	font-weight: 500;
-	font-size: (21 / $body-copy-size) * 1em; 
+	font-size: ($h3-size-p / $body-copy-size) * 1em; 
 	letter-spacing: normal;
-	line-height: 1.15em;
-	margin-top: (20 / 24) * 1em;
-	margin-bottom: (10 / 24) * 1em;
+	line-height: $h3-lh-p;
+	margin-top: (20 / $h3-size-p) * 1em;
+	margin-bottom: (10 / $h3-size-p) * 1em;
 	margin-left: 0;
 	margin-right: 0;
 	@media (min-width: $rwt-mq-s-tab) {
-		font-size: (24 / $body-copy-size) * 1em; 
+		font-size: ($h3-size-s-tab / $body-copy-size) * 1em; 
 		letter-spacing: normal;
-		line-height: (28 / 24);
-		margin-top: (20 / 24) * 1em;
-		margin-bottom: (10 / 24) * 1em;
+		line-height: $h3-lh-s-tab;
+		margin-top: (20 / $h3-size-s-tab) * 1em;
+		margin-bottom: (10 / $h3-size-s-tab) * 1em;
 		margin-left: 0;
 		margin-right: 0;
 	}
 	@media (min-width: $rwt-mq-l-tab) {
-		font-size: (28 / $body-copy-size) * 1em; 
+		font-size: ($h3-size-l-tab / $body-copy-size) * 1em; 
 		letter-spacing: normal;
-		line-height: (32 / 28);
-		margin-top: (20 / 28) * 1em;
-		margin-bottom: (10 / 28) * 1em;
+		line-height: $h3-lh-l-tab;
+		margin-top: (20 / $h3-size-l-tab) * 1em;
+		margin-bottom: (10 / $h3-size-l-tab) * 1em;
 		margin-left: 0;
 		margin-right: 0;
 	}
 	@media (min-width: $rwt-mq-desk) {
-		font-size: (30 / $body-copy-size) * 1em; 
+		font-size: ($h3-size-desk / $body-copy-size) * 1em; 
 		letter-spacing: normal;
-		line-height: (36 / 30);
-		margin-top: (20 / 30) * 1em;
-		margin-bottom: (10 / 30) * 1em;
+		line-height: $h3-lh-desk;
+		margin-top: (20 / $h3-size-desk) * 1em;
+		margin-bottom: (10 / $h3-size-desk) * 1em;
 		margin-left: 0;
 		margin-right: 0;
 	}
 	@media (min-width: $rwt-mq-l-desk) {
-		font-size: (32 / ($body-copy-size + 2)) * 1em; 
+		font-size: ($h3-size-l-desk / $body-copy-size-l) * 1em; 
 		letter-spacing: normal;
-		line-height: (46 / 32);
-		margin-top: (20 / 32) * 1em;
-		margin-bottom: (10 / 32) * 1em;
+		line-height: $h3-lh-l-desk;
+		margin-top: (20 / $h3-size-l-desk) * 1em;
+		margin-bottom: (10 / $h3-size-l-desk) * 1em;
 		margin-left: 0;
 		margin-right: 0;
 	}
 	.wf-inactive & {
+		font-family: $sans-serif-fallback;
 		@media (min-width: $rwt-mq-s-tab) {
 			
 		}
@@ -271,7 +284,7 @@ h3 {
 			
 		}
 		@media (min-width: $rwt-mq-desk) {
-			
+			letter-spacing: -0.0075em;
 		}
 		@media (min-width: $rwt-mq-l-desk) {
 			
@@ -282,50 +295,51 @@ h3 {
 h4 {
 	color: $header-color;
 	font-family: $sans-serif; 
-	font-size: (18 / $body-copy-size) * 1em; 
+	font-size: ($h4-size-p / $body-copy-size) * 1em; 
 	letter-spacing: normal;
-	line-height: (24 / 18);
-	margin-top: (15 / 18) * 1em;
-	margin-bottom: (5 / 18) * 1em;
+	line-height: $h4-lh-p;
+	margin-top: (15 / $h4-size-p) * 1em;
+	margin-bottom: (5 / $h4-size-p) * 1em;
 	margin-left: 0;
 	margin-right: 0;
 	@media (min-width: $rwt-mq-s-tab) {
-		font-size: (18 / $body-copy-size) * 1em; 
+		font-size: ($h4-size-s-tab / $body-copy-size) * 1em; 
 		letter-spacing: normal;
-		line-height: (24 / 18);
-		margin-top: (15 / 18) * 1em;
-		margin-bottom: (5 / 18) * 1em;
+		line-height: $h4-lh-s-tab;
+		margin-top: (15 / $h4-size-s-tab) * 1em;
+		margin-bottom: (5 / $h4-size-s-tab) * 1em;
 		margin-left: 0;
 		margin-right: 0;
 	}
 	@media (min-width: $rwt-mq-l-tab) {
-		font-size: (20 / $body-copy-size) * 1em; 
+		font-size: ($h4-size-l-tab / $body-copy-size) * 1em; 
 		letter-spacing: normal;
-		line-height: (24 / 20);
-		margin-top: (15 / 20) * 1em;
-		margin-bottom: (5 / 20) * 1em;
+		line-height: $h4-lh-l-tab;
+		margin-top: (15 / $h4-size-l-tab) * 1em;
+		margin-bottom: (5 / $h4-size-l-tab) * 1em;
 		margin-left: 0;
 		margin-right: 0;
 	}
 	@media (min-width: $rwt-mq-desk) {
-		font-size: (22 / $body-copy-size) * 1em; 
+		font-size: ($h4-size-desk / $body-copy-size) * 1em; 
 		letter-spacing: normal;
-		line-height: (26 / 22);
-		margin-top: (15 / 22) * 1em;
-		margin-bottom: (5 / 22) * 1em;
+		line-height: $h4-lh-desk;
+		margin-top: (15 / $h4-size-desk) * 1em;
+		margin-bottom: (5 / $h4-size-desk) * 1em;
 		margin-left: 0;
 		margin-right: 0;
 	}
 	@media (min-width: $rwt-mq-l-desk) {
-		font-size: (24 / ($body-copy-size + 2)) * 1em; 
+		font-size: ($h4-size-l-desk / $body-copy-size-l) * 1em; 
 		letter-spacing: normal;
-		line-height: (30 / 24);
-		margin-top: (15 / 24) * 1em;
-		margin-bottom: (5 / 24) * 1em;
+		line-height: $h4-lh-l-desk;
+		margin-top: (15 / $h4-size-l-desk) * 1em;
+		margin-bottom: (5 / $h4-size-l-desk) * 1em;
 		margin-left: 0;
 		margin-right: 0;
 	}
 	.wf-inactive & {
+		font-family: $sans-serif-fallback;
 		@media (min-width: $rwt-mq-s-tab) {
 			
 		}
@@ -333,7 +347,8 @@ h4 {
 			
 		}
 		@media (min-width: $rwt-mq-desk) {
-			
+			letter-spacing: -0.035em;
+			font-size: 1.35em
 		}
 		@media (min-width: $rwt-mq-l-desk) {
 			
@@ -357,6 +372,7 @@ h5 {
 		
 	}
 	.wf-inactive & {
+		font-family: $sans-serif-fallback;
 		@media (min-width: $rwt-mq-s-tab) {
 			
 		}
@@ -388,6 +404,7 @@ h6 {
 		
 	}
 	.wf-inactive & {
+		font-family: $sans-serif-fallback;
 		@media (min-width: $rwt-mq-s-tab) {
 			
 		}
@@ -437,6 +454,11 @@ a {
 	line-height: 0.9em; 
 	float: left; 
 	padding-right: 0.1em; 
+	.wf-inactive & {
+		font-family: $sans-serif-fallback;
+		font-size: 2.75em;
+		padding-right: 0.05em;
+	}
 }
 .article-text p:first-of-type:first-letter {
 	@extend %initial_cap;

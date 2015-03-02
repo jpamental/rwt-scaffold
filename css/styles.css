@@ -507,7 +507,10 @@ html {
 		margin-top
 		margin-bottom	
 */
-body, caption, th, td, input, textarea, legend, fieldset {
+body {
+  font-size: 1em; }
+
+p, caption, th, td, input, textarea, legend, fieldset {
   color: #393939;
   font-family: "Fira Sans", Helvetica, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
   font-size: 1em;
@@ -517,13 +520,24 @@ body, caption, th, td, input, textarea, legend, fieldset {
   -o-transition: font-size 0.2s ease-in-out;
   -webkit-transition: font-size 0.2s ease-in-out;
   transition: font-size 0.2s ease-in-out; }
+  @media (min-width: 25em) {
+    p, caption, th, td, input, textarea, legend, fieldset {
+      font-size: 1em; } }
+  @media (min-width: 43.75em) {
+    p, caption, th, td, input, textarea, legend, fieldset {
+      font-size: 1em; } }
+  @media (min-width: 56.25em) {
+    p, caption, th, td, input, textarea, legend, fieldset {
+      font-size: 1em; } }
   @media (min-width: 81.25em) {
-    body, caption, th, td, input, textarea, legend, fieldset {
-      font-size: 1.125em; } }
-  .wf-inactive body, .wf-inactive caption, .wf-inactive th, .wf-inactive td, .wf-inactive input, .wf-inactive textarea, .wf-inactive legend, .wf-inactive fieldset {
-    font-size: 1.155em;
-    font-family: Helvetica, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif; }
-  .wf-inactive.uncorrected body, .wf-inactive.uncorrected caption, .wf-inactive.uncorrected th, .wf-inactive.uncorrected td, .wf-inactive.uncorrected input, .wf-inactive.uncorrected textarea, .wf-inactive.uncorrected legend, .wf-inactive.uncorrected fieldset {
+    p, caption, th, td, input, textarea, legend, fieldset {
+      font-size: 1.125em;
+      line-height: 1.33333; } }
+  .wf-inactive p, .wf-inactive caption, .wf-inactive th, .wf-inactive td, .wf-inactive input, .wf-inactive textarea, .wf-inactive legend, .wf-inactive fieldset {
+    font-family: Helvetica, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    font-size: 0.985em;
+    word-spacing: 0.07em; }
+  .wf-inactive.uncorrected p, .wf-inactive.uncorrected caption, .wf-inactive.uncorrected th, .wf-inactive.uncorrected td, .wf-inactive.uncorrected input, .wf-inactive.uncorrected textarea, .wf-inactive.uncorrected legend, .wf-inactive.uncorrected fieldset {
     font-size: inherit;
     line-height: inherit;
     letter-spacing: inherit; }
@@ -567,6 +581,14 @@ h1 {
       line-height: 1.0625;
       margin-top: 0.9375em;
       margin-bottom: 0.46875em; } }
+  .wf-inactive h1 {
+    font-family: Helvetica, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif; }
+    @media (min-width: 56.25em) {
+      .wf-inactive h1 {
+        font-size: 2.95em;
+        letter-spacing: -0.025em;
+        margin-top: 1.04167em;
+        margin-bottom: 0.47917em; } }
 
 h2 {
   color: #2f2f2f;
@@ -583,7 +605,7 @@ h2 {
     h2 {
       font-size: 1.75em;
       letter-spacing: normal;
-      line-height: 1.14286;
+      line-height: 1.21429;
       margin-top: 0.71429em;
       margin-bottom: 0.35714em;
       margin-left: 0;
@@ -601,7 +623,7 @@ h2 {
     h2 {
       font-size: 2.25em;
       letter-spacing: normal;
-      line-height: 1.25;
+      line-height: 1.16667;
       margin-top: 0.83333em;
       margin-bottom: 0.55556em;
       margin-left: 0;
@@ -615,6 +637,16 @@ h2 {
       margin-bottom: 0.5em;
       margin-left: 0;
       margin-right: 0; } }
+  .wf-inactive h2 {
+    font-family: Helvetica, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif; }
+    @media (min-width: 56.25em) {
+      .wf-inactive h2 {
+        margin-top: 0.77778em;
+        margin-bottom: 0.61111em; } }
+    @media (min-width: 81.25em) {
+      .wf-inactive h2 {
+        margin-top: 0.7em;
+        margin-bottom: 0.55em; } }
 
 h3 {
   color: #2f2f2f;
@@ -622,9 +654,9 @@ h3 {
   font-weight: 500;
   font-size: 1.3125em;
   letter-spacing: normal;
-  line-height: 1.15em;
-  margin-top: 0.83333em;
-  margin-bottom: 0.41667em;
+  line-height: 1.14286;
+  margin-top: 0.95238em;
+  margin-bottom: 0.47619em;
   margin-left: 0;
   margin-right: 0; }
   @media (min-width: 25em) {
@@ -658,18 +690,23 @@ h3 {
     h3 {
       font-size: 1.77778em;
       letter-spacing: normal;
-      line-height: 1.4375;
+      line-height: 1.25;
       margin-top: 0.625em;
       margin-bottom: 0.3125em;
       margin-left: 0;
       margin-right: 0; } }
+  .wf-inactive h3 {
+    font-family: Helvetica, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif; }
+    @media (min-width: 56.25em) {
+      .wf-inactive h3 {
+        letter-spacing: -0.0075em; } }
 
 h4 {
   color: #2f2f2f;
   font-family: "Fira Sans", Helvetica, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
   font-size: 1.125em;
   letter-spacing: normal;
-  line-height: 1.33333;
+  line-height: 1.22222;
   margin-top: 0.83333em;
   margin-bottom: 0.27778em;
   margin-left: 0;
@@ -678,7 +715,7 @@ h4 {
     h4 {
       font-size: 1.125em;
       letter-spacing: normal;
-      line-height: 1.33333;
+      line-height: 1.22222;
       margin-top: 0.83333em;
       margin-bottom: 0.27778em;
       margin-left: 0;
@@ -705,19 +742,29 @@ h4 {
     h4 {
       font-size: 1.33333em;
       letter-spacing: normal;
-      line-height: 1.25;
+      line-height: 1.16667;
       margin-top: 0.625em;
       margin-bottom: 0.20833em;
       margin-left: 0;
       margin-right: 0; } }
+  .wf-inactive h4 {
+    font-family: Helvetica, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif; }
+    @media (min-width: 56.25em) {
+      .wf-inactive h4 {
+        letter-spacing: -0.035em;
+        font-size: 1.35em; } }
 
 h5 {
   color: #2f2f2f;
   font-family: "Fira Sans", Helvetica, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif; }
+  .wf-inactive h5 {
+    font-family: Helvetica, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif; }
 
 h6 {
   color: #2f2f2f;
   font-family: "Fira Sans", Helvetica, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif; }
+  .wf-inactive h6 {
+    font-family: Helvetica, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif; }
 
 p {
   margin: 0 0 1em 0;
@@ -807,6 +854,10 @@ a {
   line-height: 0.9em;
   float: left;
   padding-right: 0.1em; }
+  .wf-inactive .article-text p:first-of-type:first-letter, .article-text .wf-inactive p:first-of-type:first-letter, .wf-inactive .lt-ie9 .article-text h2 + p:first-letter, .lt-ie9 .article-text .wf-inactive h2 + p:first-letter {
+    font-family: Helvetica, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+    font-size: 2.75em;
+    padding-right: 0.05em; }
 
 /* To work in older versions of IE you have to target an adjacent selector because first-of-type doesn't work */
 /******** HELPERS ********/

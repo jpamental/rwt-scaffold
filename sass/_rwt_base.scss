@@ -28,6 +28,7 @@ $text-base-size: 16; // use base equivalent pixel size (i.e. 16 for 'default')
 $body-copy-size: 16; // adjust this to the equivalent pixel size you'd like for body copy
 $body-copy-size-l: 18; // adjust this to the equivalent pixel size you'd like for body copy on larger screens
 $body-copy-lh: 23;   // adjust to equivalent pixel value for line height in body copy
+$body-copy-lh-l: 24;   // adjust to equivalent pixel value for line height in body copy
 
 // H1 size and line height across major scaling points
 $h1-size-p: 32; // equivalent pixel value on phones
@@ -41,6 +42,45 @@ $h1-lh-s-tab: (40 / $h1-size-s-tab); // equivalent pixel value on smaller tablet
 $h1-lh-l-tab: (45 / $h1-size-l-tab); // equivalent pixel value on larger tablets
 $h1-lh-desk: (50 / $h1-size-desk); // equivalent pixel value on desktop
 $h1-lh-l-desk: (68 / $h1-size-l-desk); // equivalent pixel value on large desktop
+
+// H2 size and line height across major scaling points
+$h2-size-p: 26; // equivalent pixel value on phones
+$h2-size-s-tab: 28; // equivalent pixel value on smaller tablets
+$h2-size-l-tab: 32; // equivalent pixel value on larger tablets
+$h2-size-desk: 36; // equivalent pixel value on desktop
+$h2-size-l-desk: 40; // equivalent pixel value on large desktop
+
+$h2-lh-p: (30 / $h2-size-p); // equivalent pixel value on phones/small tablets
+$h2-lh-s-tab: (34 / $h2-size-s-tab); // equivalent pixel value on smaller tablets
+$h2-lh-l-tab: (40 / $h2-size-l-tab); // equivalent pixel value on larger tablets
+$h2-lh-desk: (42 / $h2-size-desk); // equivalent pixel value on desktop
+$h2-lh-l-desk: (48 / $h2-size-l-desk); // equivalent pixel value on large desktop
+
+// H3 size and line height across major scaling points
+$h3-size-p: 21; // equivalent pixel value on phones
+$h3-size-s-tab: 24; // equivalent pixel value on smaller tablets
+$h3-size-l-tab: 28; // equivalent pixel value on larger tablets
+$h3-size-desk: 30; // equivalent pixel value on desktop
+$h3-size-l-desk: 32; // equivalent pixel value on large desktop
+
+$h3-lh-p: (24 / $h3-size-p); // equivalent pixel value on phones/small tablets
+$h3-lh-s-tab: (28 / $h3-size-s-tab); // equivalent pixel value on smaller tablets
+$h3-lh-l-tab: (32 / $h3-size-l-tab); // equivalent pixel value on larger tablets
+$h3-lh-desk: (36 / $h3-size-desk); // equivalent pixel value on desktop
+$h3-lh-l-desk: (40 / $h3-size-l-desk); // equivalent pixel value on large desktop
+
+// H4 size and line height across major scaling points
+$h4-size-p: 18; // equivalent pixel value on phones
+$h4-size-s-tab: 18; // equivalent pixel value on smaller tablets
+$h4-size-l-tab: 20; // equivalent pixel value on larger tablets
+$h4-size-desk: 22; // equivalent pixel value on desktop
+$h4-size-l-desk: 24; // equivalent pixel value on large desktop
+
+$h4-lh-p: (22 / $h4-size-p); // equivalent pixel value on phones/small tablets
+$h4-lh-s-tab: (22 / $h4-size-s-tab); // equivalent pixel value on smaller tablets
+$h4-lh-l-tab: (24 / $h4-size-l-tab); // equivalent pixel value on larger tablets
+$h4-lh-desk: (26 / $h4-size-desk); // equivalent pixel value on desktop
+$h4-lh-l-desk: (28 / $h4-size-l-desk); // equivalent pixel value on large desktop
 
 
 
