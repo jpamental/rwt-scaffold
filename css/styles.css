@@ -403,6 +403,7 @@ table {
 
 /* Import _base.scss variables */
 /* Set theme variables here */
+/* fallback font tweaks should be done in _rwt_scaffold - not worth putting variables in here for that */
 /* 400px */
 /* 700px */
 /* 900px */
